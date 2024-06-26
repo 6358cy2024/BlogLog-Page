@@ -3,6 +3,11 @@ const noteForm = document.querySelector('#note-form');
 // Target the note header h3
 const noteHeader = document.querySelector('.note-header');
 
+function switchMode() {
+  let lighting = document.body;
+  lighting.classList.toggle("dark");
+}
+
 function getNotes() {
   // Pull the old data from the database(localStorage) or an empty array if no previous data has been stored
   const rawNotes = localStorage.getItem('notes');
@@ -81,3 +86,4 @@ outputNotes();
 
 // Set up any necessary event listeners that should be listening when the page loads
 noteForm.addEventListener('submit', createNote);
+
