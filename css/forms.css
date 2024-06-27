@@ -1,0 +1,17 @@
+form#blog-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 0 auto;
+}
+
+form > * {
+    margin-bottom: 10px;
+    padding: 6px 12px;
+}
+
+form button {
+    background: #38d9a1;
+    color: #fff;
+    font-size: .95rem;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+    <button id="light-dark" onclick="switchMode()">Switch Display</button>
+    <h2 class="sub-text text-center"> Your very own personal Blog!</h2>
+    <form id="blog-form">
+        
+        <h2 class="text-center">Create Blog</h2>
+        <input id="user-input" type="text" placeholder="Enter the author of this blog" required>
+        <input id="title-input" type="text" placeholder="Enter your title" required>
+        <textarea id="blog-entry" rows="5" placeholder="Write your blog here!" required></textarea>
+        <button id="go-to">Save Blog</button>
+    </form>
+    <script src="js/form.js"></script>
+    <script src="js/logic.js"></script>
+</body>
+</html>

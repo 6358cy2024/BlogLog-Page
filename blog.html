@@ -7,34 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/blog.css">
+
 </head>
 
 <body>
-    <button id="LightDark" onclick="switchMode()">Switch Display</button>
+    <button id="back">Back</button>
+    <button id="light-dark">Switch Display</button>
     <h1 class="head-text text-center"> BlogLog</h1>
-    <h2 class="sub-text text-center"> Your very own personal Blog!</h2>
+    <h1 id="header-text">Your Blogs</h1>
 
-    <form id="note-form">
-        <h2 class="text-center">Create Note</h2>
 
-        <input id="note-input" type="text" placeholder="Enter your note text">
-
-        <button>Save Note</button>
-    </form>
-
-    <h3 class="note-header">You have not added any notes.</h3>
-
-    <main class="container">
-        <!-- <article class ="note">
-            <p class="note-text">Note One</p>
-            <p class="note-date"></p>Added: 6/24/2024</p>
-        </article> -->
-
-    </main>
+    <!-- <h3 class="blog-header">You have not created any blogs.</h3> -->
+    <main class="container"></main>
 
 
     <script src="js/blog.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 </html>
