@@ -1,8 +1,7 @@
 const blogHeader = document.querySelector('.blog-header');
 function getBlogs() {
-  // Pull the old data from the database(localStorage) or an empty array if no previous data has been stored
+  const rawBlogs = localStorage.getItem('blogs');
   const blogs = JSON.parse(rawBlogs) || [];
-
   return blogs;
 }
 
@@ -11,9 +10,9 @@ function getBlogs() {
 function outputBlogs() {
   const blogs = getBlogs();
   const container = document.querySelector('.container');
-  const blogsHeader = document.querySelector('.blogs-header');
+  const blogsHeader = document.querySelector('#blogs-header');
   if (blogs.length) {
-    blogHeader.innerText = 'Your Blogs:';
+    blogsHeader.innerText = 'Your Blogs:';
   }
 
   container.innerHTML = '';
@@ -22,19 +21,18 @@ function outputBlogs() {
     //Target the main container element
     container.insertAdjacentHTML('beforeend', `
         <article class ="blog">
-            <p class="author-input>${blogObj.author}</p>
-            <p class="title-input>${blogObj.blogTitle}</p>
+            <p class="author-input">${blogObj.author}</p>
+            <p class="title-input">${blogObj.title}</p>
             <p class="blog-entry">${blogObj.text}</p>
-            <p class="blog-date"></p>Added: ${blogObj.dateStr}</p>
+            <p class="blog-date"></p>Added: ${blogObj.date}</p>
         </article>
         `);//articles for every entry stored.
   }
 }
-function homePage() {
-  window.location = "./index.html";
-}
 
-document.getElementById('back').addEventListener('click', homePage)
+
+outputBlogs();
+
 // Set up any necessary event listeners that should be listening when the page loads
 
 

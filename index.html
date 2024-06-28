@@ -8,23 +8,30 @@
     <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-    <button id="light-dark" onclick="switchMode()">Switch Display</button>
-    <h2 class="sub-text text-center"> Your very own personal Blog!</h2>
-    <form id="blog-form">
-        
-        <h2 class="text-center">Create Blog</h2>
-        <input id="author-input" type="text" placeholder="Enter the author of this blog" required>
-        <input id="title-input" type="text" placeholder="Enter your title" required>
-        <textarea id="blog-entry" rows="5" placeholder="Write your blog here!" required></textarea>
-        <button id="go-to">Save Blog</button>
-    </form>
-    <script src="js/form.js"></script>
-    <script src="js/logic.js"></script>
+    <header>
+        <a href="./blog.html">View Blogs</a>
+        <button id="light-dark" onclick="switchMode()">Switch Display</button>
+    </header>
+
+    <main>
+        <h2 class="sub-text text-center"> Your very own personal Blog!</h2>
+        <form id="blog-form">
+            
+            <h2 class="text-center">Create Blog</h2>
+            <input id="author-input" type="text" placeholder="Enter the author of this blog" required>
+            <input id="title-input" type="text" placeholder="Enter your title" required>
+            <textarea id="blog-entry" rows="5" placeholder="Write your blog here!" required></textarea>
+            <button>Save Blog</button>
+        </form>
+    </main>
+
     <footer>
 
-        <h2 id="contact"> Contanct Information:</h2>
+        <h2 id="contact"> Contact Information:</h2>
 
         <a href="https://6358cy2024.github.io/professional_portfolio/">Github</a>
     </footer>
+    <script src="js/form.js"></script>
+    <script src="js/logic.js"></script>
 </body>
 </html>

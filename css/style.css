@@ -7,7 +7,15 @@
     color: #444;
   }
   
-  
+body, html {
+    height: 100%;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+}
+
 a {
     text-decoration: none;
     color: #333;
@@ -15,8 +23,8 @@ a {
 button {
     cursor: pointer;
 }
-  
-  /* GLOBAL/REUSABLE CLASSES */
+
+/* GLOBAL/REUSABLE CLASSES */
 .text-center {
     text-align: center;
 }
@@ -27,12 +35,13 @@ button {
     margin: 10px;
 }
 /* Custom styles */
+header{
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+}
 
 #light-dark {
-    position: fixed;
-    display:flex;
-    top: 10px;
-    right: 10px;
     background-color: white;
     border-color: rgb(93, 93, 93);
 }
@@ -46,6 +55,11 @@ button {
     color: black;
     border-color: white;
 }
+
+main {
+    flex:1;
+}
+
 footer{
     display:flex;
     bottom:0;

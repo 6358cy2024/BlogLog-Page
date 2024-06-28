@@ -1,6 +1,5 @@
 const blogForm = document.querySelector('#blog-form');
 
-
 // A function that is is called when the form is submitted
 function createBlog(eventObj) {
   eventObj.preventDefault();
@@ -42,15 +41,9 @@ function createBlog(eventObj) {
 
   blogs.push(blogObj);
   const jsonArray = JSON.stringify(blogs);
-  const rawBlogs = localStorage.setItem('blogs', jsonArray);
   localStorage.setItem('blogs', jsonArray);
-  console.log(rawBlogs);
-  blogInput.value = '';
-  
-}
-function blogPage() {
   window.location = "./blog.html";
 }
 
-document.getElementById('go-to').addEventListener('click', blogPage)
+
 blogForm.addEventListener('submit', createBlog);

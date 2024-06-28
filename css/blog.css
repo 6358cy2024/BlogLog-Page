@@ -1,12 +1,15 @@
-.blog-header{
+#blogs-header{
     margin: 25px 0 25px 5%; /* Top right bottom left*/
 }
 
+
+
 main.container{
-    padding: 0 5%;
+    padding: 10px 5%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
+    
 }
 
 .blog > * {
@@ -18,11 +21,6 @@ main.container{
     font-weight: 700;
 }
 
-#back{
-    position: fixed;
-    top: 10px;
-    left: 10px;
-}
 
 #header-text {
     margin: 5%;
