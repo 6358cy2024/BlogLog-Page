@@ -1,4 +1,3 @@
-
 .blog-header{
     margin: 25px 0 25px 5%; /* Top right bottom left*/
 }
@@ -17,4 +16,14 @@ main.container{
 
 .blog p.blog-text{
     font-weight: 700;
+}
+
+#back{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+#header-text {
+    margin: 5%;
 }
