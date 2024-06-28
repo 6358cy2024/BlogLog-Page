@@ -30,6 +30,7 @@ button {
 
 #light-dark {
     position: fixed;
+    display:flex;
     top: 10px;
     right: 10px;
     background-color: white;
@@ -44,4 +45,12 @@ button {
 .dark #light-dark {
     color: black;
     border-color: white;
+}
+footer{
+    display:flex;
+    bottom:0;
+    /* a static height is not good, make sure to use the padding and margins */
+    justify-content: space-between;
+    text-decoration: underline;
+    padding: 30px 5%;
 }

@@ -1,7 +1,6 @@
 const blogHeader = document.querySelector('.blog-header');
 function getBlogs() {
   // Pull the old data from the database(localStorage) or an empty array if no previous data has been stored
-  const rawBlogs = localStorage.getItem('blogs');
   const blogs = JSON.parse(rawBlogs) || [];
 
   return blogs;
@@ -34,7 +33,7 @@ function outputBlogs() {
 function homePage() {
   window.location = "./index.html";
 }
-outputBlogs();
+
 document.getElementById('back').addEventListener('click', homePage)
 // Set up any necessary event listeners that should be listening when the page loads
 

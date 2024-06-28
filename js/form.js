@@ -38,13 +38,14 @@ function createBlog(eventObj) {
     date: dateStr
   };
 
-  const blogs = getBlogs();
+  const blogs = JSON.parse(localStorage.getItem('blogs')) || [];
 
   blogs.push(blogObj);
   const jsonArray = JSON.stringify(blogs);
+  const rawBlogs = localStorage.setItem('blogs', jsonArray);
   localStorage.setItem('blogs', jsonArray);
+  console.log(rawBlogs);
   blogInput.value = '';
-  outputBlogs();
   
 }
 function blogPage() {
